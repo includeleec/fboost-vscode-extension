@@ -1,65 +1,50 @@
-# fboost-extension README
+# FBoost Visucal Code Extension
 
-This is the README for your extension "fboost-extension". After writing up a brief description, we recommend including the following sections.
+FBoost Visucal Code Extension 是针对 [Visual Code](https://code.visualstudio.com/) 设计的 [FISCO BCOS](http://fisco-bcos.org/zh/) 扩展插件。
 
 ## Features
+主要根据 [FISCO BCOS 文档](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/installation.html) 集成相关命令，通过 `ctrl+shift+p (win)` 或者 `command+shift+p (mac)` 调出快捷命令，使用户在 Visual Code 中便捷操作 FISCO BCOS。
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Deploy
+FISCO BCOS 的部署与启动。
 
-For example if there is an image subfolder under your extension project workspace:
+|   命令  | 说明    |
+| :------------- | :----------: | 
+| FBoost:[Deploy] (1).Initial envirement | 设置初始化环境，可选 local 或者 remote | 
+| FBoost:[Deploy] (2).Install dependency  | 安装相关依赖 |
+| FBoost:[Deploy] (3).Set node base  | 设置 FISCO BCOS 部署目录 |
+| FBoost:[Deploy] (4).Build chain  | 构建 FISCO BCOS |
+| FBoost:[Deploy] (5).Start nodes  | 启动节点 |
 
-\!\[feature X\]\(images/feature-x.png\)
+### Check
+检查 FISCO BCOS 节点相关状态。
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+|   命令  | 说明    |
+| :------------- | :----------: | 
+| FBoost:[Check] nodes process | 检查节点配置 | 
+| FBoost:[Check] logs | 查看日志 |
+| FBoost:[Check] nodes consensus status  | 检查共识状态 |
 
-## Requirements
+### Console
+FISCO BCOS 控制台部署与启动。
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+|   命令  | 说明    |
+| :------------- | :----------: | 
+| FBoost:[Console] (1).Install console | 部署控制台 | 
+| FBoost:[Console] (2).Copy console config | 拷贝控制台配置文件 |
+| FBoost:[Console] (3).Copy console certificate  | 配置控制台证书 |
+| FBoost:[Console] Start console  | 启动控制台 |
 
-## Extension Settings
+### Scaffold
+FISCO BCOS 的脚手架工程。
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+|   命令  | 说明    |
+| :------------- | :----------: | 
+| FBoost:[Scaffold] Spring Boot Starter | Spring Boot 脚手架工程 | 
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.1
 
-### 1.0.0
+初代版本，在 DoraHacks 2019 比赛时构思，设计和开发。
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

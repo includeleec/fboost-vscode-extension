@@ -20,7 +20,8 @@
 		"onCommand:fboost.installConsole",
 		"onCommand:fboost.copyConsoleConfig",
 		"onCommand:fboost.copyConsoleCert",
-		"onCommand:fboost.startConsole"
+		"onCommand:fboost.startConsole",
+		"onCommand:fboost.scaffold.spring-boot"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -76,6 +77,10 @@
 			{
 				"command": "fboost.startConsole",
 				"title": "FBoost:[Console] Start console"
+			},
+			{
+				"command": "fboost.scaffold.spring-boot",
+				"title": "FBoost:[Scaffold] Spring Boot Starter"
 			}
 		]
 	},

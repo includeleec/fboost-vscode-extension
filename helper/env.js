@@ -12,7 +12,6 @@ function checkRemote(terminal) {
             return;
         }
 
-
     });
 }
 

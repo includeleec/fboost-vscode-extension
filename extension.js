@@ -8,6 +8,9 @@ const {
 
 const { installDependcy, setNodeBase, buildChain, startNodes } = require('./helper/install');
 
+// import starter project
+const { loadScaffold } = require('./helper/scaffold');
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -75,6 +78,15 @@ function activate(context) {
 
 	}));
 
+
+	context.subscriptions.push(vscode.commands.registerCommand('fboost.scaffold.spring-boot', () => {
+
+		if (this.terminal) {
+			loadScaffold(this.terminal, "https://github.com/FISCO-BCOS/spring-boot-starter.git");
+		}
+
+	}));
+
 	const terminalCommands = [
 		// about check
 		registerTerminalCommand('fboost.checkProcess', "ps -ef | grep -v grep | grep fisco-bcos"),
@@ -91,6 +103,9 @@ function activate(context) {
 	terminalCommands.map(tc => {
 		context.subscriptions.push(tc);
 	});
+
+
+
 
 }
 exports.activate = activate;

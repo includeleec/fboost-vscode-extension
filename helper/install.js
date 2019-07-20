@@ -23,7 +23,7 @@ function setNodeBase(terminal) {
 
 function buildChain(terminal) {
 
-    vscode.window.showInputBox({ placeHolder: "Enter p2p_port,channel_port,jsonrpc_port, default: 30300,20200,8545" }).then(ports => {
+    vscode.window.showInputBox({ placeHolder: "Enter p2p_port, channel_port, jsonrpc_port, default: 30300,20200,8545" }).then(ports => {
 
         if (!ports) {
             ports = '30300,20200,8545'
