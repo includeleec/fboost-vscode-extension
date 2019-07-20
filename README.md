@@ -42,6 +42,11 @@ FISCO BCOS 的脚手架工程。
 | :------------- | :----------: | 
 | FBoost:[Scaffold] Spring Boot Starter | Spring Boot 脚手架工程 | 
 
+## TODO
+- 增加 Python Scaffold (ing)
+- 支持 deploy FISCO BCOS Docker
+- 支持 deploy smart contract
+
 ## Release Notes
 
 ### 0.1

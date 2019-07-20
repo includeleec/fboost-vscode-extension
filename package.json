@@ -1,8 +1,11 @@
 {
 	"name": "fboost-extension",
-	"displayName": "fboost-extension",
-	"description": "",
+	"displayName": "FBoost extension",
+	"description": "FBoost Visucal Code Extension 是针对 Visual Code 设计的 FISCO BCOS 扩展插件。",
 	"version": "0.0.1",
+	"publisher": "leec",
+	"repository": "https://github.com/includeleec/fboost-vscode-extension",
+	"icon": "resources/icon.jpg",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
